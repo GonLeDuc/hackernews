@@ -1,23 +1,68 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState, useEffect} from 'react'
 
-function App() {
+
+const App = () => {
+  const[search, setSearch] = useState('');
+  const[query, setQuery] = useState('React');
+  const[results, setResults] = useState([]);
+  const[loading, setLoading] = useState(false);
+
+useEffect(() => {
+  async function fetchData(){
+    try {
+      setLoading(true);
+      const response = await fetch(`http://hn.algolia.com/api/v1/search?query=${query}&tags=story`);
+      const json = await response.json();
+      setResults(
+        json.hits.map(item =>{
+          return [item.url,
+          item.title,
+          item.author,
+          item.created_at,
+        ]
+      })
+      )
+    } finally {
+      setLoading(false);
+    }
+  }
+if (query !=='') {
+  fetchData();
+}
+}, [query])
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hackernews</h1>
+      <form onSubmit={e =>
+        {e.preventDefault();
+        setQuery(search);}}>
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder="Search for news"/>
+      <button type="submit"> Search</button>
+    </form>
+    <br/>
+    {loading ? <h1>Hold my Beer!</h1> :
+    results.map(item => (
+      <div key={item}>
+      <a href={item[0]} >{item[0]}</a>
+      <br/>
+      Title: {item[1]}
+      <br/>
+      Author: {item[2]}
+      <br/>
+      Release date: {item[3]}
+      <br/>
+      <br/>
+      </div>
+    ))
+  }
     </div>
   );
 }

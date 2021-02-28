@@ -1,5 +1,6 @@
-{
-  "hits": [
+import React from 'react'
+
+export const landingPage = [
     {
       "created_at": "2021-01-31T11:05:47.000Z",
       "title": "Python vs. JavaScript – What Are the Key Differences?",
@@ -41,7 +42,7 @@
           "value": "oedmarap",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -87,7 +88,7 @@
           "value": "uscoderjs",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -126,14 +127,14 @@
           "value": "https://nodewood.com/",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "DanHulton",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -163,7 +164,7 @@
           "value": "Software Development on Windows 10 with WSL2",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "url": {
@@ -178,7 +179,7 @@
           "value": "jackfranklin",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -216,14 +217,14 @@
           "value": "https://github.com/louischatriot/nedb",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "tonyjstark",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -269,7 +270,7 @@
           "value": "kiyanwang",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -307,14 +308,14 @@
           "value": "https://twitter.com/dhh/status/1354802203756617732",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "throwaway888abc",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -352,14 +353,14 @@
           "value": "https://leafletjs.com/",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "wrycoder",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -397,14 +398,14 @@
           "value": "https://www.youtube.com/watch?v=BpFtR8U_sjw",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "jackkinsella",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -450,7 +451,7 @@
           "value": "WinDoctor",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -488,14 +489,14 @@
           "value": "ftreml",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "story_text": {
           "value": "For our SaaS-product Botium Box - a full functional and non-functional testing infrastructure for chatbot - we decided to go for Node.js in the backend. ... The one single argument why we decided for Node.js was that in our small developer team (4 people) everyone is a full-stack-developer, and it will ultimately safe time to develop client and server in the same programming language.",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -533,14 +534,14 @@
           "value": "https://v8.dev/features/tags/es2021",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "undefinednull",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -586,7 +587,7 @@
           "value": "fagnerbrack",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -632,7 +633,7 @@
           "value": "nassims12",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -678,7 +679,7 @@
           "value": "MRElsberry",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -708,7 +709,7 @@
           "value": "Alan Turing Proved Why All Programmers Should Be Writing Tests",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "url": {
@@ -723,7 +724,7 @@
           "value": "vicnicius",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -762,14 +763,14 @@
           "value": "https://github.com/nuchi/js_add_and_mul",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "matheist",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -799,7 +800,7 @@
           "value": "Glassmorphism Working Calculator Using HTML, CSS",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "url": {
@@ -814,7 +815,7 @@
           "value": "monalisamondol",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -852,14 +853,14 @@
           "value": "https://2ality.com/2021/01/undefined-null-revisited.html",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "ingve",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         }
       }
@@ -889,14 +890,14 @@
           "value": "Open Redirect on Archive.org",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "author": {
           "value": "hamiltonians",
           "matchLevel": "none",
           "matchedWords": [
-            
+
           ]
         },
         "story_text": {
@@ -909,13 +910,4 @@
         }
       }
     }
-  ],
-  "nbHits": 31642,
-  "page": 0,
-  "nbPages": 50,
-  "hitsPerPage": 20,
-  "exhaustiveNbHits": false,
-  "query": "javascript",
-  "params": "advancedSyntax=true&analytics=true&analyticsTags=backend&query=javascript&tags=story",
-  "processingTimeMS": 12
-}
+  ]
